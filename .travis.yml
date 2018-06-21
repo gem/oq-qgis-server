@@ -11,4 +11,4 @@ before_script:
     - docker exec -ti qgis-server rpm -q qgis-server
 
 script:
-    - sleep 5 && curl -s 'http://localhost:8010/ogc/test_project?service=WMS&request=GetCapabilities' | grep -ivq exception
+    - sleep 5 && curl -s 'http://localhost:8010/ogc/test_project?service=WMS&request=GetCapabilities'
